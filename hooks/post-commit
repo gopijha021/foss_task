@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Commit: $(git log -1 --pretty=format:"%h - %s")" >> commit_details.txt
+echo "Author: $(git log -1 --pretty=format:"%an <%ae>")" >> commit_details.txt
+
